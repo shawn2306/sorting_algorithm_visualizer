@@ -13,8 +13,8 @@ Algorithms covered so far:
 | Heap Sort | heap_sort |
 | Merge Sort | merge_sort |
 ## Created Algorithms !!
-| Shell Sort | shellSort 
-| Comb Sort | combSort
+| Shell Sort | shellSort |
+| Comb Sort | combSort |
 
 # Usage:
 
