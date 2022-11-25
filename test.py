@@ -13,7 +13,7 @@ def test(sorting_function):
     arr = s.Array(np.random.randint(low=-2000, high=2000, size=1000))
     sorting_function(arr)
     try:
-        assert is_sorted(arr.values), sorting_function.__name__ + ' Failed.'
+        assert is_sorted(arr.values), f'{sorting_function.__name__} Failed.'
     except AssertionError:
         tc.print_exc()
         return 'FAIL'
