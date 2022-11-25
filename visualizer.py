@@ -9,7 +9,7 @@ def plot(arr):
 
 
 def on_close(event):
-    if not sys.argv[0] == 'test.py':
+    if sys.argv[0] != 'test.py':
         sys.exit(0)
 
 

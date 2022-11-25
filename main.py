@@ -24,11 +24,10 @@ if len(sys.argv) < 2:
     print('\n')
     sys.exit(0)
 
-algorithms = list(filter(lambda a: a.__name__ == sys.argv[1], algorithms))
-if (len(algorithms) == 0):
-    print('Method does not exist.')
-else:
+if algorithms := list(filter(lambda a: a.__name__ == sys.argv[1], algorithms)):
     algorithm = algorithms[0]
     arr = s.Array(get_random_array(array_size))
     algorithm(arr)
     vs.show()
+else:
+    print('Method does not exist.')
